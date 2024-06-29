@@ -15,6 +15,14 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-iconify')({
+      icons: {
+        'simple-icons': [
+          'leetcode',
+        ],
+      },
+    }),
+  ],
 };
 export default config;
