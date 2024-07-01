@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, {useEffect} from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
@@ -14,7 +16,7 @@ const RootLayout = ({ children }) => {
       <body>
         <Providers>
           {/* <ThemeSwitch /> */}
-          <Sidebar />
+          <Sidebar/>
           {children}
         </Providers>
         <Analytics />

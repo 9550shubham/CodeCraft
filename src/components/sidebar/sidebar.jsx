@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleOpen = () => {
     setOpen(!open);
@@ -14,10 +15,12 @@ const Sidebar = () => {
     setOpen(false);
   };
 
+  const isFeaturePage = pathname === '/features';
+  if (isFeaturePage) return null;
   const pathUrl = usePathname();
 
   return (
-    <aside className={`aside ${open ? "open" : ""}`}>
+    <aside className={`aside ${open ? "open" : ""} `}>
       <div onClick={handleOpen} className="nav-toggler">
         <span />
       </div>
