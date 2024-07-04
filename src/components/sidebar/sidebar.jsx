@@ -15,8 +15,6 @@ const Sidebar = () => {
     setOpen(false);
   };
 
-  const isFeaturePage = pathname === '/features';
-  if (isFeaturePage) return null;
   const pathUrl = usePathname();
 
   return (
