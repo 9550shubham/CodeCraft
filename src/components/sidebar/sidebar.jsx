@@ -15,6 +15,8 @@ const Sidebar = () => {
     setOpen(false);
   };
 
+  if (pathname === '/app') return null;
+  
   const pathUrl = usePathname();
 
   return (
