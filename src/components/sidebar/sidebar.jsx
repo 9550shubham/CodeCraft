@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { useSliding } from '../../components/sidebar/SlidingContext';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const { sliding } = useSliding();
 
   const handleOpen = () => {
     setOpen(!open);
@@ -20,7 +22,7 @@ const Sidebar = () => {
   const pathUrl = usePathname();
 
   return (
-    <aside className={`aside ${open ? "open" : ""} `}>
+    <aside className={`aside ${sliding? "sliding" : ""} ${open ? "open" : ""} `}>
       <div onClick={handleOpen} className="nav-toggler">
         <span />
       </div>

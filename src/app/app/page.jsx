@@ -17,7 +17,7 @@ export default function Home({ searchParams }) {
 		<Suspense fallback={<p className="text-lg text-zinc-500">Loading...</p>}>
 			<div className="relative w-full h-full">
 				<Link
-					href="/features"
+					href="/features?animate=true"
 					className="absolute top-40 left-40 px-4 py-2 border-zinc-500 text-zinc-500 hover:text-zinc-300 rounded text-xl"
 				>
 					{"{git reset NORMAL}"}
