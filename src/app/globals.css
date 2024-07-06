@@ -137,7 +137,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.fixed {
+.gif_fi {
   position: fixed;
   top: 0;
   left: 0;

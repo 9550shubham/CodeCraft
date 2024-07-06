@@ -55,7 +55,7 @@ const Features = () => {
         </label>
       </div>
       {isAnimating && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+        <div className="gif_fi inset-0 flex items-center justify-center bg-black bg-opacity-75">
           <img src="/gifs/coding1.gif" alt="Loading..." />
         </div>
       )}
