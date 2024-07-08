@@ -20,6 +20,7 @@ const Sidebar = () => {
   if (pathname === '/app') return null;
   if (pathname === '/app/projectsbygit') return null;
   if (pathname === '/app/contactbygit') return null;
+  if (pathname === '/app/search') return null;
   
   const pathUrl = usePathname();
 
