@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "@primer/octicons-react";
 import Link from "next/link";
 import React from "react";
 import UserSearch from "../components/search-input";
+import './custom-styles.css';
 
 // TODO: make it edge once Turbopack supports it.
 export const runtime = 'nodejs';
@@ -13,28 +14,21 @@ export default function Home({
 	const username = customUsername || process.env.GITHUB_USERNAME;
 
 	return (
-		<div className="flex flex-col items-center  w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-			<div 
-			className="container flex flex-row-reverse items-center justify-between p-6"
-			>
-				<div className="flex justify-between gap-8 text-base">
-				</div>
-
+		<div className="custom-container">
+			<div className="custom-header">
 				<Link
 					href={"/app"}
-					className="duration-200 text-zinc-300 hover:text-zinc-100"
+					className="custom-link"
 				>
-					<ArrowLeftIcon className="w-6 h-6" />
+					<ArrowLeftIcon className="custom-icon" />
 				</Link>
 			</div>
-			<nav className="my-16 animate-fade-in" />
-			<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-
-			<h1 className="">
+			<nav className="custom-nav" />
+			<div className="custom-glow-line-left" />
+			<h1 className="custom-search-container">
 				<UserSearch user={username} />
 			</h1>
-
-			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+			<div className="custom-glow-line-right" />
 		</div>
-	);
+	);	
 }

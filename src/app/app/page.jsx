@@ -5,6 +5,7 @@ import data from "../../../data.json";
 import { ProfileOrganizations } from "./components/orgs";
 import { RecentActivity } from "./components/recent-activity";
 import { getUser } from "./data";
+import ResetButton from "./components/ResetButton.jsx";
 
 const navigation = [
 	{ name: "Projects", href: "/app/projectsbygit" },
@@ -12,17 +13,15 @@ const navigation = [
 ];
 
 export default function Home({ searchParams }) {
+	const customUsername = searchParams.customUsername;
+	const timestamp = searchParams.timestamp || Date.now();
+	const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
 
 	return (
 		<Suspense fallback={<p className="text-lg text-zinc-500">Loading...</p>}>
-			<div className="relative w-full h-full">
-				<Link
-					href="/features?animate=true"
-					className="absolute top-40 left-40 px-4 py-2 border-zinc-500 text-zinc-500 hover:text-zinc-300 rounded text-xl"
-				>
-					{"{git reset NORMAL}"}
-				</Link>
-                <LandingComponent searchParams={searchParams} />
+			<div key={`${username}-${timestamp}`} className="relative w-full h-full">
+				<ResetButton customUsername={customUsername} />
+                <LandingComponent username={username} customUsername={customUsername} timestamp={timestamp}/>
             </div>
 		</Suspense>
 	)
@@ -46,23 +45,25 @@ const UserText = async ({ promise }) => {
 	);
 };
 
-const TryYourself = ({ customUsername }) => {
+const TryYourself = ({ customUsername, timestamp }) => {
 
-	const href = customUsername ? '/app' : '/app/search';
+	const href = customUsername 
+    ? `?customUsername=${customUsername}&timestamp=${timestamp}` 
+    : `/app/search?timestamp=${timestamp}`;
 
 	return <Link
 		href={href}
 		className="text-lg duration-500 text-zinc-500 hover:text-zinc-300 border-dashed p-2 rounded border-2 border-zinc-500 hover:border-zinc-300"
 	>
 		{
-			customUsername ? 'Showing: ' + customUsername + ', click to cancel ❌' : 'Try yourself'
+			customUsername ? 'Showing: ' + customUsername : 'Try yourself'
 		}
 	</Link>;
 };
 
-const LandingComponent = async ({ searchParams: { customUsername } }) => {
+const LandingComponent = async ({  username, customUsername,timestamp }) => {
 
-	const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
+	// const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
 	const promise = getUser(username);
 
 	return (
@@ -78,7 +79,7 @@ const LandingComponent = async ({ searchParams: { customUsername } }) => {
 							{item.name}
 						</Link>
 					))}
-					<TryYourself customUsername={customUsername} />
+					<TryYourself customUsername={customUsername} timestamp={timestamp} />
 				</ul>
 			</nav>
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
