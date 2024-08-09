@@ -48,7 +48,7 @@ const UserText = async ({ promise }) => {
 const TryYourself = ({ customUsername, timestamp }) => {
 
 	const href = customUsername 
-    ? `?customUsername=${customUsername}&timestamp=${timestamp}` 
+    ? `?customUsername=${customUsername}&timestamp=${timestamp}&animate=true` 
     : `/app/search?timestamp=${timestamp}`;
 
 	return <Link

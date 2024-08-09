@@ -4,7 +4,6 @@ import React, {useEffect} from "react";
 import { Analytics } from "@vercel/analytics/react";
 import Sidebar from "@/components/sidebar/sidebar";
 import Providers from "./providers";
-// import ThemeSwitch from "@/components/panel/ThemeSwitch";
 import "./globals.css";
 import "../styles/style.css";
 import "../styles/blue.css";
@@ -15,7 +14,6 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <body>
         <Providers>
-          {/* <ThemeSwitch /> */}
           <Sidebar/>
           {children}
         </Providers>

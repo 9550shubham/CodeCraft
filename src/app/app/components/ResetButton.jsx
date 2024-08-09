@@ -3,7 +3,7 @@ import Link from 'next/link';
 const ResetButton = ({ customUsername }) => {
   const timestamp = Date.now();
   const href = customUsername 
-    ? `/app?timestamp=${timestamp}` 
+    ? `/app?animate=true&timestamp=${timestamp}` 
     : `/features?animate=true&timestamp=${timestamp}`;
 
   return (

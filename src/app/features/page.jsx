@@ -14,11 +14,10 @@ const Features = () => {
   useEffect(() => {
     if (searchParams.get('animate') === 'true') {
       setIsAnimating(true);
-      toggleFullScreen;
       setTimeout(() => {
         setIsAnimating(false);
         router.replace('/features', undefined, { shallow: true });
-      }, 2600); 
+      }, 1600); 
     }
   }, [searchParams, router]);
 

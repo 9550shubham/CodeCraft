@@ -32,7 +32,7 @@ const Sidebar = () => {
       <div className="aside-inner">
         <div className="logo">
           <Link href="/" onClick={handleClose}>
-            Shubham
+            CodeCraft
           </Link>
         </div>
         <ul className="nav">
