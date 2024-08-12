@@ -10,7 +10,7 @@ const Projects = () => {
               <h2>Projects</h2>
             </div>
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="portfolio-filter padd-15">
               <button type="button" className="active" data-filter="all">
                 All
@@ -22,13 +22,13 @@ const Projects = () => {
                 Web
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             {/* Portfolio Item */}
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/1.jpg" alt="portfolio" />
+                  <img src="/imgs/projects/DropEase.jpg" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
                   <h4>Web Design</h4>
@@ -43,7 +43,7 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/2.jpg" alt="portfolio" />
+                  <img src="/imgs/projects/DigitalMess.png" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
                   <h4>Web Design</h4>
@@ -58,7 +58,7 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/3.jpg" alt="portfolio" />
+                  <img src="/imgs/projects/CovidTrackerApp.png" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
                   <h4>Web Design</h4>
@@ -76,7 +76,7 @@ const Projects = () => {
             >
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/4.jpg" alt="portfolio" />
+                  <img src="/imgs/projects/QuizApp.jpg" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
                   <h4>Banner Design</h4>
@@ -91,7 +91,7 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="wordpress">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/5.jpg" alt="portfolio" />
+                  <img src="/imgs/projects/CognifAI.png" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
                   <h4>Wordpress</h4>
@@ -106,7 +106,7 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/portfolio/6.jpg" alt="portfolio" />
+                  <img src="/imgs/projects/E-Commerce.jpg" alt="portfolio" />
                 </div>
                 <div className="portfolio-info">
                   <h4>Web Design</h4>

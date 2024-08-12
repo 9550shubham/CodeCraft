@@ -63,7 +63,7 @@ const About = () => {
                   <div className="row">
                     <div className="buttons padd-15">
                       <a
-                        href="/assets/docs/resume.pdf"
+                        href="/assets/docs/Shubham_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn"
