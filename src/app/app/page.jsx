@@ -32,7 +32,7 @@ const UserIcon = async ({ promise }) => {
 	const user = await promise;
 
 	return (
-		<Image alt='👨‍💻' width={100} height={100} src={user.avatar_url || data.avatarUrl} className="float-right rounded-full mx-4" />
+		<Image alt='👨‍💻' width={90} height={90} src={user.avatar_url || data.avatarUrl} className="float-right rounded-full mx-4 lg:w-40 lg:h-40 md:w-28 md:h-28 w-12 h-12 sm:w-20 sm:h-20" />
 	);
 };
 
@@ -82,14 +82,12 @@ const LandingComponent = async ({  username, customUsername,timestamp }) => {
 					<TryYourself customUsername={customUsername} timestamp={timestamp} />
 				</ul>
 			</nav>
-			<div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-
-			<h1 className="flex items-center z-10 text-4xl hover:scale-110 text-transparent duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text bg-white p-5">
+			<div className="w-full h-px bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 animate-glow" />
+			<h1 className="flex items-center z-10 text-4xl hover:scale-110 text-transparent duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl lg:text-9xl whitespace-nowrap bg-clip-text bg-white p-5">
 				{username}
 				<UserIcon promise={promise} />
 			</h1>
-
-			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+			<div className="w-full h-px bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 animate-glow" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-lg text-zinc-500">
 					<Suspense fallback={<p>Loading...</p>}>
