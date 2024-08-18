@@ -1,0 +1,60 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: rgb(69, 67, 67);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .popup-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .popup-content button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0070f3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .popup-content button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Confetti wrapper styles */
+  .confetti-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none; 
+    transition: opacity 1s ease-out; /* Fade-out effect */
+  }
+  
+  .confetti-visible {
+    opacity: 1;
+  }
+  
+  .confetti-fade-out {
+    opacity: 0;
+  }
+  

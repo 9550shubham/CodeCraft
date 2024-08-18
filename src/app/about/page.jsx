@@ -70,7 +70,7 @@ const About = () => {
                       >
                         Download CV
                       </a>
-                      <a href="#contact" data-section-index={0} className="btn hire-me">
+                      <a href="/contact" data-section-index={0} className="btn hire-me">
                         Hire Me
                       </a>
                     </div>

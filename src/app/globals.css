@@ -85,6 +85,7 @@ body {
 
 html {
   color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 .switch {
@@ -166,4 +167,60 @@ img {
 
 .aside.sliding {
   transform: translateX(-100%);
+}
+
+.glowing-text {
+  background: none;
+  border: none;
+  color: #007BFF;
+  cursor: pointer;
+  /* font-weight: bold; */
+  animation: glow 1.2s infinite alternate;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.glowing-text:hover {
+  text-shadow: 0 0 12px #00BFFF, 0 0 40px #00BFFF;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #007BFF, 0 0 10px #007BFF;
+  }
+  to {
+    text-shadow: 0 0 15px #007BFF, 0 0 30px #007BFF;
+  }
+}
+
+.main-menu-text {
+  display: none;
+  font-size: 19px;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  left: 120px;
+  color: #1e90ff;
+  text-shadow: 0 0 10px rgba(30, 144, 255, 1);
+  animation: slideLeftFadeOutCycle 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .main-menu-text {
+    display: block;
+  }
+}
+
+@keyframes slideLeftFadeOutCycle {
+  0%, 100% {
+    left: 110px;
+    opacity: 1;
+  }
+  50% { 
+    left: 19px;
+    opacity: 0;
+  }
+  50.01%, 99.99% {
+    left: 110px;
+    opacity: 0;
+  }
 }

@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSliding } from '../../components/sidebar/SlidingContext';
+import PopupAlert from './../Celebration/PopupAlert'; 
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const { sliding } = useSliding();
+  const [showPopup, setShowPopup] = useState(false);
   
   const isHomePage = pathname === '/';
 
@@ -19,13 +21,19 @@ const Sidebar = () => {
   const handleClose = () => {
     setOpen(false);
   };
+  
+  const handlePopupOpen = () => {
+    setShowPopup(true);
+  };
 
-  useEffect(() => {
-  }, [pathname]);
+  const handlePopupClose = () => {
+    setShowPopup(false);
+  };
 
   if (pathname === '/app' || pathname === '/app/projectsbygit' || pathname === '/app/contactbygit' || pathname === '/app/search') return null;
 
   return (
+    <>
     <aside className={`aside ${sliding ? "sliding" : ""} ${open ? "open" : ""}`}>
       <div onClick={handleOpen} className="nav-toggler">
         <span />
@@ -60,13 +68,13 @@ const Sidebar = () => {
             </Link>
           </li>
           <li onClick={handleClose}>
-            <Link href="/contact" className={`${pathname === "/contact" && "active"}`}>
-              <i className="fa fa-comments" /> Contact
+            <Link href="/features" className={`${pathname === "/features" && "active"}`}>
+              <i className="fa fa-magic" /> Features
             </Link>
           </li>
           <li onClick={handleClose}>
-            <Link href="/features" className={`${pathname === "/features" && "active"}`}>
-              <i className="fa fa-magic" /> Features
+            <Link href="/contact" className={`${pathname === "/contact" && "active"}`}>
+              <i className="fa fa-comments" /> Contact
             </Link>
           </li>
         </ul>
@@ -77,14 +85,21 @@ const Sidebar = () => {
             </Link>
           </div>
         )}
-        <div className="copyright" style={{ marginLeft: '13px' }}>
-          Created with ❤️ By{" "}
-          <a href="http://shubham.com" target="_blank" rel="noopener noreferrer">
-            Shubham
-          </a>
-        </div>
+          <div className="copyright" style={{ marginLeft: '13px' }}>
+            Created with ❤️ by{" "}
+            <button onClick={handlePopupOpen} className="glowing-text" >
+              Shubham
+            </button>
+          </div>
       </div>
     </aside>
+    {showPopup && (
+      <PopupAlert
+        message="Shubham says: Thanks for visiting 🤝"
+        onClose={handlePopupClose}
+      />
+    )}
+    </>
   );
 };
 

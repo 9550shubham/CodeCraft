@@ -4,6 +4,9 @@ export default async function Home() {
     <main>
       <section className="home section" id="home">
         <div className="container">
+          <div className="main-menu-text">
+            👈🏻Explore
+          </div>
           <div className="intro">
             <img
               src="/imgs/Formal_DP.jpg"

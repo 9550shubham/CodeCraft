@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 const Contact = () => {
@@ -85,7 +86,10 @@ const Contact = () => {
               </div>
               <div className="row">
                 <div className="col-12 padd-15">
-                  <button type="submit" className="btn">
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => alert('Working on, coming soon')}>
                     Send Message
                   </button>
                 </div>
