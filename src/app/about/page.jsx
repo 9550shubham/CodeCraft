@@ -15,15 +15,10 @@ const About = () => {
               <div className="row">
                 <div className="about-text padd-15">
                   <h2>
-                    I am Shubham an <span>Engineer</span>
+                    I'm Shubham an <span>Engineer</span>
                   </h2>
                   <p>
-                    Hi! My name is Shubham. I am an Engineer, and I am very
-                    passionate and dedicated to my work. With 1 years experience as
-                    an Engineer, I have acquired the skills and knowledge
-                    necessary to make my project a success. I enjoy every step of
-                    the design process, from discussion and collaboration.
-                  </p>
+                  I am very passionate and dedicated to my work. I am a Versatile Full Stack Developer with expertise in the MERN stack and Next.js. Skilled in creating scalable, user-focused web applications with strong performance. Experienced in agile environments and passionate about building impactful digital solutions. Well-suited for roles like Full Stack Developer or Software Engineer.</p>
                 </div>
               </div>
               <div className="row">
@@ -31,34 +26,29 @@ const About = () => {
                   <div className="row">
                     <div className="info-item padd-15">
                       <p>
-                        Website : <span>www.my-portfolio.vercel.app</span>
+                        Pursuing Degree : <span>Bachelor of Engineering</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Email : <span>shubhamgandhi1002@gmail.com</span>
+                        From : <span>Thapar Institute of Engineering & Technology</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Degree : <span>B.E</span>
+                        Hometown City : <span>Panipat, Haryana</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Phone : <span>+91 8295154359</span>
+                        Phone : <span><a href="tel:+918295154359">+91 8295154359</a></span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
-                      <p>
-                        City : <span>Panipat</span>
-                      </p>
-                    </div>
-                    <div className="info-item padd-15">
-                      <p>
-                        Freelance : <span>Available</span>
-                      </p>
-                    </div>
+                    <p>
+                      Email : <span><a href="mailto:shubhamgandhi1002@gmail.com">shubhamgandhi1002@gmail.com</a></span>
+                    </p>
+                  </div>
                   </div>
                   <div className="row">
                     <div className="buttons padd-15">
@@ -77,30 +67,38 @@ const About = () => {
                   </div>
                 </div>
                 <div className="skills padd-15">
+                <h3 className="title">Skills</h3>
                   <div className="row">
                     <div className="skill-item padd-15">
-                      <h5>NodeJS</h5>
+                      <h5>MERN Stack</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "80%" }} />
                         <div className="skill-percent">80%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>ReactJS</h5>
+                      <h5>React Framework: Next.JS</h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "80%" }} />
-                        <div className="skill-percent">80%</div>
+                        <div className="progress-in" style={{ width: "70%" }} />
+                        <div className="skill-percent">70%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>Javascript</h5>
+                      <h5>Test Automation: TestNG & Selenium </h5>
                       <div className="progress">
-                        <div className="progress-in" style={{ width: "80%" }} />
-                        <div className="skill-percent">80%</div>
+                        <div className="progress-in" style={{ width: "70%" }} />
+                        <div className="skill-percent">70%</div>
                       </div>
                     </div>
                     <div className="skill-item padd-15">
-                      <h5>MongoDB</h5>
+                      <h5>App Development: Flutter</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "60%" }} />
+                        <div className="skill-percent">60%</div>
+                      </div>
+                    </div>
+                    <div className="skill-item padd-15">
+                      <h5>HTML, CSS, Javascript</h5>
                       <div className="progress">
                         <div className="progress-in" style={{ width: "90%" }} />
                         <div className="skill-percent">90%</div>
@@ -110,22 +108,23 @@ const About = () => {
                 </div>
               </div>
               <div className="row">
-                <div className="education padd-15">
-                  <h3 className="title">Education</h3>
+                <div className="experience padd-15">
+                  <h3 className="title">Experience</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
+                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
+                          <p className="timeline-text underline">
+                            <i>Developreneurs Tech Ltd.</i>
+                          </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2021 to Present
+                            <i className="fa fa-calendar" /> April'24 to August'24
                           </h6>
-                          <h4 className="timeline-title">
-                            TIET
-                          </h4>
                           <p className="timeline-text">
-                            Since 2021 I started to learn Programming. 
+                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -161,8 +160,8 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div className="experience padd-15">
-                  <h3 className="title">Experience</h3>
+                <div className="education padd-15">
+                  <h3 className="title">Education</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
