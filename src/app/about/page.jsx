@@ -1,4 +1,6 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
+import JourneyCard from "./journeyCard";
 
 const About = () => {
   return (
@@ -65,10 +67,19 @@ const About = () => {
                       </a>
                     </div>
                   </div>
+                  <p style={{paddingTop:60, paddingBottom:10, paddingLeft:0, paddingRight:20}}>Explore my skills and the journey behind them, starting from an extracurricular activity (ELC) that sparked my passion, leading me to become a software developer through continuous learning and hands-on projects.</p>
+
                 </div>
                 <div className="skills padd-15">
                 <h3 className="title">Skills</h3>
                   <div className="row">
+                    <div className="skill-item padd-15">
+                      <h5>Data Structures and Algorithms</h5>
+                      <div className="progress">
+                        <div className="progress-in" style={{ width: "75%" }} />
+                        <div className="skill-percent">75%</div>
+                      </div>
+                    </div>
                     <div className="skill-item padd-15">
                       <h5>MERN Stack</h5>
                       <div className="progress">
@@ -104,12 +115,19 @@ const About = () => {
                         <div className="skill-percent">90%</div>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
               <div className="row">
+                <div className="card-carousel-container w-full max-w-4xl mx-auto px-4">
+                  <h3 className="title text-center mb-6">My Journey</h3>
+                  <JourneyCard />
+                </div>
+              </div>
+              <div className="row">
                 <div className="experience padd-15">
-                  <h3 className="title">Experience</h3>
+                  <h3 className="title">Journey of Experience</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
@@ -131,28 +149,45 @@ const About = () => {
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
+                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
+                          <p className="timeline-text underline">
+                            <i>Developreneurs Tech Ltd.</i>
+                          </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2021
+                            <i className="fa fa-calendar" /> April'24 to August'24
                           </h6>
-                          <h4 className="timeline-title">
-                            Narayna Jr. college
-                          </h4>
                           <p className="timeline-text">
-                            12th class
+                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
                           </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
+                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
+                          <p className="timeline-text underline">
+                            <i>Developreneurs Tech Ltd.</i>
+                          </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> 2019
+                            <i className="fa fa-calendar" /> April'24 to August'24
                           </h6>
-                          <h4 className="timeline-title">
-                            MASD School
-                          </h4>
                           <p className="timeline-text">
-                            10th class
+                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                        {/* Timeline Item */}
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
+                          <p className="timeline-text underline">
+                            <i>ELC activity</i>
+                          </p>
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> April'24 to August'24
+                          </h6>
+                          <p className="timeline-text">
+                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -168,29 +203,49 @@ const About = () => {
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
+                          <h4 className="timeline-title">Bachelor's in Engineering</h4>
+                          <p className="timeline-text underline">
+                          Thapar Institute of Engineering & Technology
+                          </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> Present
+                            <i className="fa fa-calendar" /> August'21 to July'25
                           </h6>
-                          <h4 className="timeline-title">intern</h4>
                           <p className="timeline-text">
-                            .......
+                          CGPA: 8.07/10
                           </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
+                          <h4 className="timeline-title">Bachelor's in Engineering</h4>
+                          <p className="timeline-text underline">
+                          Thapar Institute of Engineering & Technology
+                          </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> Present
+                            <i className="fa fa-calendar" /> August'21 to July'25
                           </h6>
-                          <h4 className="timeline-title">intern</h4>
                           <p className="timeline-text">
-                            .....
+                          CGPA: 8.07/10
                           </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h4 className="timeline-title">Bachelor's in Engineering</h4>
+                          <p className="timeline-text underline">
+                          Thapar Institute of Engineering & Technology
+                          </p>
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> August'21 to July'25
+                          </h6>
+                          <p className="timeline-text">
+                          CGPA: 8.07/10
+                          </p>
+                        </div>
                         {/* Timeline Item end */}
+                        
                       </div>
                     </div>
                   </div>

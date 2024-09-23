@@ -1,0 +1,138 @@
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.cards-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 260px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.punched-circle {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: #222121;
+  border-radius: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #54a4d3;
+}
+
+.gradient-card {
+  background: linear-gradient(55deg, #131313, #131313, #6b666656, #9e9d9d05, #28282861);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.timeline-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+  left: 100px;
+}
+
+.right-arrow {
+  right: 100px;
+}
+
+@media (max-width: 1038px) {
+  .carousel-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 535px) {
+  .card {
+    height: 320px;
+  }
+}
+
+@media (max-width: 390px) {
+  .card {
+    height: 360px;
+  }
+}
+
+@media (max-width: 330px) {
+  .card {
+    height: 420px;
+  }
+}
