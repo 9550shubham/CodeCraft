@@ -14,6 +14,7 @@ export default async function Home() {
               className="shadow-dark"
             />
             <h1>Shubham Gandhi</h1>
+            <p>An Engineer</p>
             <p>Software Developer</p>
             <div className="social-links">
               <a href="https://github.com/9550shubham" target="_blank">

@@ -1,104 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import './journeyCard.css';
-
-// const JourneyCard = () => {
-//   const cards = [
-//     {
-//       id: 1,
-//       title: 'Getting Started with Flutter',
-//       company: 'ELC',
-//       date: 'July\'22',
-//       content: 'Designed and delivered a company portfolio project.',
-//       type: 'gradient'
-//     },
-//     {
-//       id: 2,
-//       title: 'Full Stack Developer Intern',
-//       company: 'Developreneurs Tech Ltd.',
-//       date: 'April\'24 to August\'24',
-//       content: 'Actively contributed to agile processes and project delivery.',
-//       type: 'gradient'
-//     },
-//     {
-//       id: 3,
-//       title: 'Full Stack Developer Intern',
-//       company: 'Developreneurs Tech Ltd.',
-//       date: 'April\'24 to August\'24',
-//       content: 'Contributed to the development of the company portfolio.',
-//       type: 'gradient'
-//     },
-//     {
-//       id: 4,
-//       title: 'ELC Activity',
-//       company: 'ELC Activity',
-//       date: 'July\'22',
-//       content: 'Led the development of a Flutter project within a week.',
-//       type: 'gradient'
-//     }
-//   ];
-
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   // Auto-swipe every 5 seconds
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       nextCard();
-//     }, 4500);
-//     return () => clearInterval(interval);
-//   }, [currentIndex]);
-
-//   // Next and Previous card handlers
-//   const prevCard = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex === 0 ? cards.length - 1 : prevIndex - 1));
-//   };
-
-//   const nextCard = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex === cards.length - 1 ? 0 : prevIndex + 1));
-//   };
-
-//   // Swipe functionality for mobile screens
-//   let touchStartX = 0;
-//   let touchEndX = 0;
-
-//   const handleTouchStart = (e) => {
-//     touchStartX = e.changedTouches[0].screenX;
-//   };
-
-//   const handleTouchEnd = (e) => {
-//     touchEndX = e.changedTouches[0].screenX;
-//     if (touchStartX - touchEndX > 50) {
-//       nextCard(); // Swipe left for next card
-//     }
-//     if (touchEndX - touchStartX > 50) {
-//       prevCard(); // Swipe right for previous card
-//     }
-//   };
-
-//   return (
-//     <>
-//       <button className="carousel-arrow left-arrow" onClick={prevCard}>&lt;</button>
-//       <div className="carousel-container" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
-//         <div className="cards-wrapper">
-//           <div className={`card large-card ${cards[currentIndex].type}-card`}>
-//             <div className="punched-circle">{cards[currentIndex].id}</div>
-//             <h4 className="timeline-title" style={{marginLeft:30,marginTop:-10}}>{cards[currentIndex].title}</h4>
-//             <p className="timeline-text underline">
-//               <i>{cards[currentIndex].company}</i>
-//             </p>
-//             <h6 className="timeline-date">
-//               <i className="fa fa-calendar" /> {cards[currentIndex].date}
-//             </h6>
-//             <p className="timeline-text">{cards[currentIndex].content}</p>
-//           </div>
-//         </div>
-//       </div>
-//       <button className="carousel-arrow right-arrow" onClick={nextCard}>&gt;</button>
-//     </>
-//   );
-// };
-
-// export default JourneyCard;
-
 import React, { useState, useEffect } from 'react';
 import './journeyCard.css';
 
@@ -148,7 +47,7 @@ const JourneyCard = () => {
       "id": 6,
       "title": "Expanding into React.js",
       "company": "CognifAi Health Pvt. Ltd.",
-      "date": "Aug\'23 - Jan\'24 (6 months Intern)",
+      "date": "Aug\'23 - Feb\'24 (6 months Intern)",
       "content": "I led the development of a Flutter app alongside the company’s React.js website, introducing new ideas along the way, sparking my curiosity to learn React.js hands-on. I was part of CognifAi’s transition from a startup to a full-fledged company.",
       "type": "gradient"
     },
@@ -164,7 +63,7 @@ const JourneyCard = () => {
       "id": 8,
       "title": "Remote Internship in Canada",
       "company": "Developreneurs Tech Ltd.",
-      "date": "May\'24 - Aug\'24",
+      "date": "Apr\'24 - Aug\'24",
       "content": "Developreneurs Tech Ltd., a Canadian company, reached out to me on LinkedIn for backend work on their product’s website. Later, I handled their company portfolio. This boosted my agile skills and experience working across time zones.",
       "type": "gradient"
     },    
@@ -213,7 +112,7 @@ const JourneyCard = () => {
     if (!isPaused) {
       interval = setInterval(() => {
         nextCard();
-      }, 500500);
+      }, 4500);
     }
 
     return () => {

@@ -20,7 +20,7 @@ const About = () => {
                     I'm Shubham an <span>Engineer</span>
                   </h2>
                   <p>
-                  I am very passionate and dedicated to my work. I am a Versatile Full Stack Developer with expertise in the MERN stack and Next.js. Skilled in creating scalable, user-focused web applications with strong performance. Experienced in agile environments and passionate about building impactful digital solutions. Well-suited for roles like Full Stack Developer or Software Engineer.</p>
+                    I am very passionate and dedicated to my work. I am a Versatile Full Stack Developer with expertise in the MERN stack and Next.js. Skilled in creating scalable, user-focused web applications with strong performance. Experienced in agile environments and passionate about building impactful digital solutions. Well-suited for roles like Full Stack Developer or Software Engineer.</p>
                 </div>
               </div>
               <div className="row">
@@ -47,10 +47,10 @@ const About = () => {
                       </p>
                     </div>
                     <div className="info-item padd-15">
-                    <p>
-                      Email : <span><a href="mailto:shubhamgandhi1002@gmail.com">shubhamgandhi1002@gmail.com</a></span>
-                    </p>
-                  </div>
+                      <p>
+                        Email : <span><a href="mailto:shubhamgandhi1002@gmail.com">shubhamgandhi1002@gmail.com</a></span>
+                      </p>
+                    </div>
                   </div>
                   <div className="row">
                     <div className="buttons padd-15">
@@ -67,11 +67,11 @@ const About = () => {
                       </a>
                     </div>
                   </div>
-                  <p style={{paddingTop:60, paddingBottom:10, paddingLeft:0, paddingRight:20}}>Explore my skills and the journey behind them, starting from an extracurricular activity (ELC) that sparked my passion, leading me to become a software developer through continuous learning and hands-on projects.</p>
+                  <p style={{ paddingTop: 60, paddingBottom: 10, paddingLeft: 0, paddingRight: 20 }}>Explore my skills and the journey behind them, starting from an extracurricular activity (ELC) that sparked my passion, leading me to become a software developer through continuous learning and hands-on projects.</p>
 
                 </div>
                 <div className="skills padd-15">
-                <h3 className="title">Skills</h3>
+                  <h3 className="title">Skills</h3>
                   <div className="row">
                     <div className="skill-item padd-15">
                       <h5>Data Structures and Algorithms</h5>
@@ -127,22 +127,37 @@ const About = () => {
               </div>
               <div className="row">
                 <div className="experience padd-15">
-                  <h3 className="title">Journey of Experience</h3>
+                  <h3 className="title">Experience</h3>
                   <div className="row">
                     <div className="timeline-box padd-15">
                       <div className="timeline shadow-dark">
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
-                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
+                          <h4 className="timeline-title">Full Stack Summer Interned</h4>
                           <p className="timeline-text underline">
-                            <i>Developreneurs Tech Ltd.</i>
+                            <i>Xebia IT Architects Pvt Ltd.</i>
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> April'24 to August'24
+                            <i className="fa fa-calendar" /> June'24 to July'24
                           </h6>
                           <p className="timeline-text">
-                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
+                            I contributed to an online banking portal project, implementing the Locate API for accurate address validation. I also built a dynamic React header with login/logout functionality for seamless navigation and developed a secure login form with OTP authentication via Twilio for email and mobile access.
+                          </p>
+                        </div>
+                        {/* Timeline Item end */}
+                        {/* Timeline Item */}
+                        <div className="timeline-item">
+                          <div className="circle-dot" />
+                          <h4 className="timeline-title">Mentorship and Contributor</h4>
+                          <p className="timeline-text underline">
+                            <i>Timechain Summer of Code</i>
+                          </p>
+                          <h6 className="timeline-date">
+                            <i className="fa fa-calendar" /> June'24
+                          </h6>
+                          <p className="timeline-text">
+                            I delved into blockchain through TSOC (Timechain Summer of Code), an open-source mentorship program. As a contributor, I gained hands-on experience while working alongside experts in the blockchain field, expanding my knowledge and deepening my skills in this emerging technology.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -157,37 +172,22 @@ const About = () => {
                             <i className="fa fa-calendar" /> April'24 to August'24
                           </h6>
                           <p className="timeline-text">
-                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
+                            Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
                           </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
-                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
+                          <h4 className="timeline-title">Software Engineer Interned</h4>
                           <p className="timeline-text underline">
-                            <i>Developreneurs Tech Ltd.</i>
+                            <i>CognifAI Health Pvt. Ltd.</i>
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> April'24 to August'24
+                            <i className="fa fa-calendar" /> August'23 to February'24
                           </h6>
                           <p className="timeline-text">
-                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
-                          </p>
-                        </div>
-                        {/* Timeline Item end */}
-                        {/* Timeline Item */}
-                        <div className="timeline-item">
-                          <div className="circle-dot" />
-                          <h4 className="timeline-title">Full Stack Developer Interned</h4>
-                          <p className="timeline-text underline">
-                            <i>ELC activity</i>
-                          </p>
-                          <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> April'24 to August'24
-                          </h6>
-                          <p className="timeline-text">
-                          Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
+                            I developed a web application using React.js and an Android app with Flutter, implementing key features and optimizing performance, which boosted user engagement by 20%. Additionally, I conducted testing with TestNG, enhancing the app’s reliability and reducing bug reports by 30%.
                           </p>
                         </div>
                         {/* Timeline Item end */}
@@ -205,47 +205,47 @@ const About = () => {
                           <div className="circle-dot" />
                           <h4 className="timeline-title">Bachelor's in Engineering</h4>
                           <p className="timeline-text underline">
-                          Thapar Institute of Engineering & Technology
+                            Thapar Institute of Engineering & Technology
                           </p>
                           <h6 className="timeline-date">
                             <i className="fa fa-calendar" /> August'21 to July'25
                           </h6>
                           <p className="timeline-text">
-                          CGPA: 8.07/10
+                            CGPA: 8.07/10
                           </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
-                          <h4 className="timeline-title">Bachelor's in Engineering</h4>
+                          <h4 className="timeline-title">High School</h4>
                           <p className="timeline-text underline">
-                          Thapar Institute of Engineering & Technology
+                            Narayana Jr. College
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> August'21 to July'25
+                            <i className="fa fa-calendar" /> March'21
                           </h6>
                           <p className="timeline-text">
-                          CGPA: 8.07/10
+                            Percentage: 96.4%
                           </p>
                         </div>
                         {/* Timeline Item end */}
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
-                          <h4 className="timeline-title">Bachelor's in Engineering</h4>
+                          <h4 className="timeline-title">Secondary School</h4>
                           <p className="timeline-text underline">
-                          Thapar Institute of Engineering & Technology
+                            M.A.S.D Public School
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> August'21 to July'25
+                            <i className="fa fa-calendar" /> March'19
                           </h6>
                           <p className="timeline-text">
-                          CGPA: 8.07/10
+                            Percentage: 81%
                           </p>
                         </div>
                         {/* Timeline Item end */}
-                        
+
                       </div>
                     </div>
                   </div>

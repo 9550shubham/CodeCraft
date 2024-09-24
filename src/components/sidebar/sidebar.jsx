@@ -95,7 +95,7 @@ const Sidebar = () => {
     </aside>
     {showPopup && (
       <PopupAlert
-        message="Shubham says: Thanks for visiting 🤝"
+        message="Shubham says: Thanks for visiting 🤝 || Hope you’ve explored the Feature section 🖥️"
         onClose={handlePopupClose}
       />
     )}

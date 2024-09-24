@@ -19,7 +19,7 @@ const PopupAlert = ({ message, onClose }) => {
   return ReactDOM.createPortal(
     <div className="popup-overlay" onClick={onClose}>
       <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-        <h2>{message}</h2>
+        <h4>{message}</h4>
         <button onClick={onClose}>Close</button>
       </div>
       {isConfettiVisible && (
