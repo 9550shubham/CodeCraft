@@ -17,7 +17,7 @@ const About = () => {
               <div className="row">
                 <div className="about-text padd-15">
                   <h2>
-                    I'm Shubham an <span>Engineer</span>
+                    I{String.fromCharCode(39)}m Shubham an <span>Engineer</span>
                   </h2>
                   <p>
                     I am very passionate and dedicated to my work. I am a Versatile Full Stack Developer with expertise in the MERN stack and Next.js. Skilled in creating scalable, user-focused web applications with strong performance. Experienced in agile environments and passionate about building impactful digital solutions. Well-suited for roles like Full Stack Developer or Software Engineer.</p>
@@ -139,7 +139,7 @@ const About = () => {
                             <i>Xebia IT Architects Pvt Ltd.</i>
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> June'24 to July'24
+                            <i className="fa fa-calendar" /> June{String.fromCharCode(39)}24 to July{String.fromCharCode(39)}24
                           </h6>
                           <p className="timeline-text">
                             I contributed to an online banking portal project, implementing the Locate API for accurate address validation. I also built a dynamic React header with login/logout functionality for seamless navigation and developed a secure login form with OTP authentication via Twilio for email and mobile access.
@@ -154,7 +154,7 @@ const About = () => {
                             <i>Timechain Summer of Code</i>
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> June'24
+                            <i className="fa fa-calendar" /> June{String.fromCharCode(39)}24
                           </h6>
                           <p className="timeline-text">
                             I delved into blockchain through TSOC (Timechain Summer of Code), an open-source mentorship program. As a contributor, I gained hands-on experience while working alongside experts in the blockchain field, expanding my knowledge and deepening my skills in this emerging technology.
@@ -169,7 +169,7 @@ const About = () => {
                             <i>Developreneurs Tech Ltd.</i>
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> April'24 to August'24
+                            <i className="fa fa-calendar" /> April{String.fromCharCode(39)}24 to August{String.fromCharCode(39)}24
                           </h6>
                           <p className="timeline-text">
                             Developed a secure trucking website for a Canadian startup, enhancing operational efficiency by 25%. Designed a company portfolio to showcase achievements, and actively contributed to agile processes, ensuring timely project delivery.
@@ -184,7 +184,7 @@ const About = () => {
                             <i>CognifAI Health Pvt. Ltd.</i>
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> August'23 to February'24
+                            <i className="fa fa-calendar" /> August{String.fromCharCode(39)}23 to February{String.fromCharCode(39)}24
                           </h6>
                           <p className="timeline-text">
                             I developed a web application using React.js and an Android app with Flutter, implementing key features and optimizing performance, which boosted user engagement by 20%. Additionally, I conducted testing with TestNG, enhancing the app’s reliability and reducing bug reports by 30%.
@@ -203,12 +203,12 @@ const About = () => {
                         {/* Timeline Item */}
                         <div className="timeline-item">
                           <div className="circle-dot" />
-                          <h4 className="timeline-title">Bachelor's in Engineering</h4>
+                          <h4 className="timeline-title">Bachelor{String.fromCharCode(39)}s in Engineering</h4>
                           <p className="timeline-text underline">
                             Thapar Institute of Engineering & Technology
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> August'21 to July'25
+                            <i className="fa fa-calendar" /> August{String.fromCharCode(39)}21 to July{String.fromCharCode(39)}25
                           </h6>
                           <p className="timeline-text">
                             CGPA: 8.07/10
@@ -223,7 +223,7 @@ const About = () => {
                             Narayana Jr. College
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> March'21
+                            <i className="fa fa-calendar" /> March{String.fromCharCode(39)}21
                           </h6>
                           <p className="timeline-text">
                             Percentage: 96.4%
@@ -238,7 +238,7 @@ const About = () => {
                             M.A.S.D Public School
                           </p>
                           <h6 className="timeline-date">
-                            <i className="fa fa-calendar" /> March'19
+                            <i className="fa fa-calendar" /> March{String.fromCharCode(39)}19
                           </h6>
                           <p className="timeline-text">
                             Percentage: 81%
