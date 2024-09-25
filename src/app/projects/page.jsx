@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Projects = () => {
   return (
@@ -14,7 +15,13 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/projects/TripleTrans.png" alt="portfolio" />
+                  <Image
+                    src="/imgs/projects/TripleTrans.png"
+                    alt="portfolio"
+                    width={270}
+                    height={224} 
+                    className="portfolio-img" 
+                  />
                 </div>
                 <div className="portfolio-info font-semibold">
                   <h4 style={{color:'#2196F3'}}>Company Website</h4>
@@ -31,7 +38,13 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/projects/DigitalMess.png" alt="portfolio" />
+                  <Image
+                    src="/imgs/projects/DigitalMess.png"
+                    alt="portfolio"
+                    width={270}
+                    height={224}
+                    className="portfolio-img"
+                  />
                 </div>
                 <div className="portfolio-info font-semibold">
                   <h4 style={{color:'#2196F3'}}>Academic Project: Digital Mess</h4>
@@ -48,7 +61,13 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/projects/CognifAI.png" alt="portfolio" />
+                  <Image
+                    src="/imgs/projects/CognifAI.png"
+                    alt="portfolio"
+                    width={270}
+                    height={224}
+                    className="portfolio-img"
+                  />
                 </div>
                 <div className="portfolio-info">
                   <h4 style={{color:'#2196F3'}}>Company Webisite</h4>
@@ -68,7 +87,13 @@ const Projects = () => {
             >
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/projects/E-Commerce.jpg" alt="portfolio" />
+                  <Image
+                    src="/imgs/projects/E-Commerce.jpg"
+                    alt="portfolio"
+                    width={270}
+                    height={224}
+                    className="portfolio-img"
+                  />
                 </div>
                 <div className="portfolio-info">
                   <h4 style={{color:'#2196F3'}}>Flutter app with Node.js</h4>
@@ -85,7 +110,13 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="wordpress">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/projects/DropEase.jpg" alt="portfolio" />
+                  <Image
+                    src="/imgs/projects/DropEase.jpg"
+                    alt="portfolio"
+                    width={270}
+                    height={224}
+                    className="portfolio-img" 
+                  />
                 </div>
                 <div className="portfolio-info">
                   <h4 style={{color:'#2196F3'}}>Campus Food Delivery App</h4>
@@ -102,7 +133,13 @@ const Projects = () => {
             <div className="portfolio-item padd-15" data-category="web-design">
               <div className="portfolio-item-inner shadow-dark">
                 <div className="portfolio-img">
-                  <img src="/imgs/projects/CovidTrackerApp.png" alt="portfolio" />
+                  <Image
+                    src="/imgs/projects/CovidTrackerApp.png"
+                    alt="portfolio"
+                    width={270}
+                    height={224}
+                    className="portfolio-img"
+                  />
                 </div>
                 <div className="portfolio-info">
                   <h4 style={{color:'#2196F3'}}>COVID-19 Tracker App</h4>

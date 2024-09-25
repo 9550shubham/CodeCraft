@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useSliding } from '../../components/sidebar/SlidingContext';
+import Image from 'next/image';
 
 const Features = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -56,7 +57,13 @@ const Features = () => {
       </div>
       {isAnimating && (
         <div className="gif_fi inset-0 flex items-center justify-center bg-black bg-opacity-75">
-          <img src="/gifs/coding1.gif" alt="Loading..." />
+          <Image
+            src="/gifs/coding1.gif"
+            alt="Loading..."
+            width={500} 
+            height={500} 
+            className="object-contain" 
+          />
         </div>
       )}
     </motion.section>

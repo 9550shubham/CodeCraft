@@ -12,6 +12,9 @@ import "../styles/theme.css";
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <title>Shubham CodeCraft</title>
+      </head>
       <body>
         <Providers>
           <Sidebar/>

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useSliding } from '../../components/sidebar/SlidingContext';
 import PopupAlert from './../Celebration/PopupAlert'; 
+import Image from 'next/image';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
@@ -48,7 +49,7 @@ const Sidebar = () => {
         )}
         {!isHomePage && (
           <div className="logo-container">
-            <img src="/imgs/Formal_DP.jpg" alt="Logo" className="logo-image" />
+            <Image src="/imgs/Formal_DP.jpg" alt="Logo" className="logo-image" width={240} height={240} />
           </div>
         )}
         <ul className="nav">

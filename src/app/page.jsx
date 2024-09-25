@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default async function Home() {
 
   return (
@@ -8,10 +10,12 @@ export default async function Home() {
             👈🏻Explore
           </div>
           <div className="intro">
-            <img
+            <Image
               src="/imgs/Formal_DP.jpg"
               alt="Shubham Profile"
               className="shadow-dark"
+              width= {270}
+              height= {270}
             />
             <h1>Shubham Gandhi</h1>
             <p>An Engineer</p>
