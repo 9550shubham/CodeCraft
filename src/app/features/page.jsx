@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useSliding } from '../../components/sidebar/SlidingContext';
 import Image from 'next/image';
 
-const Features = () => {
+const FeaturesContent = () => {
   const [isAnimating, setIsAnimating] = useState(false);
   const router = useRouter();
   const { setSliding } = useSliding();
@@ -67,6 +67,14 @@ const Features = () => {
         </div>
       )}
     </motion.section>
+  );
+};
+
+const Features = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <FeaturesContent />
+    </Suspense>
   );
 };
 
