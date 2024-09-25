@@ -14,7 +14,7 @@ export const ProfileOrganizations = async ({ username }) => {
 	}
 
 	return (
-		<p>I'm building stuff{
+		<p>I{String.fromCharCode(39)}m building stuff{
 			organizations?.length > 0 ? <>
 				{" "}at{" "}
 				<span className="mt-3 overflow-hidden">

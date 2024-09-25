@@ -127,7 +127,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-              <p className='px-3'>Designed a Flutter-based food delivery app for campus use, featuring Firebase login authentication. The app addresses the gap where mainstream delivery services don't operate, ensuring timely food delivery within the campus.</p>
+              <p className='px-3'>Designed a Flutter-based food delivery app for campus use, featuring Firebase login authentication. The app addresses the gap where mainstream delivery services don{String.fromCharCode(39)}t operate, ensuring timely food delivery within the campus.</p>
               <p className='px-3 underline' style={{ color: '#939292' }}>Group Project</p>
             </div>
             <div className="portfolio-item padd-15" data-category="web-design">
